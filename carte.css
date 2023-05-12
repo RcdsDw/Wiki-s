@@ -1,0 +1,154 @@
+
+/* main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 50px;
+    font-style: italic;
+    color: var(--secondary);
+}
+
+/* list */
+
+ul {
+    color: var(--secondary);
+}
+
+ul>span {
+    display: flex;
+}
+
+li::marker {
+    color: var(--primary);
+}
+
+li {
+    font-size: 15px;
+}
+
+p, span {
+    font-size: 12px;
+    color: var(--secondary);
+}
+
+li, li>span {
+    display: flex;
+    gap: 20px;
+}
+
+li>span {
+    color: var(--primary);
+    top: 0px;
+    right: 0px;
+}
+
+/* bowls */
+
+#bowls ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#ulBowlsContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+#titleBowls {
+    display: flex;
+    justify-content: center;
+}
+
+/* boissons */
+
+#boissons ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#ulBoissonsContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+#titleBoissons {
+    display: flex;
+    justify-content: center;
+}
+
+/* entrees et plats */
+
+#entreesPlatsWrapper {
+    display: flex;
+}
+
+/* entrees */
+
+#titleEntrees {
+    display: flex;
+    justify-content: center;
+    line-height: 63px;
+}
+
+#entrees {
+    line-height: 30px;
+}
+
+/* plats */
+
+#titlePlats {
+    display: flex;
+    justify-content: center;
+}
+
+/* desserts */
+
+#titleDesserts {
+    display: flex;
+    justify-content: center;
+}
+
+/* carte */
+
+/* ensemble de la carte */
+
+#card {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 500px;
+    perspective: 1000px;
+    border-radius: 0px;
+    transition: transform 0.8s;
+}
+
+/* front de la carte */
+
+.card-front {
+    overflow: hidden;
+    border-radius: 12px;
+    transition: all 0.5s ease-out;
+    backface-visibility: hidden;
+    box-shadow: 0px 0px 100px 1px rgba(0, 0, 0, 0.708);
+}
+
+/* effet de lampe torche au passage de la souris */
+
+.card-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: all 0.5s ease-out;
+    border-radius: 15px;
+    mix-blend-mode: hard-light;
+    background: none;
+}

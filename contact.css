@@ -1,0 +1,23 @@
+/* main */
+
+main {
+    position: relative;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* map */
+
+.map {
+    border-radius: 25px;
+}
+
+.mapContainer {
+    margin-top: 25%;
+    border: 5px solid var(--secondary);
+    border-radius: 25px;
+}
